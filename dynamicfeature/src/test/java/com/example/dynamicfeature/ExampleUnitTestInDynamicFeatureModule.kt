@@ -2,9 +2,9 @@ package com.example.dynamicfeature
 
 import app.cash.paparazzi.DeviceConfig.Companion.PIXEL_5
 import app.cash.paparazzi.Paparazzi
+import com.example.pocpaparazzi.MyComposableInAppModule
 import org.junit.Test
 
-import org.junit.Assert.*
 import org.junit.Rule
 
 /**
@@ -12,7 +12,7 @@ import org.junit.Rule
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class ExampleUnitTest {
+class ExampleUnitTestInDynamicFeatureModule {
 
     @get:Rule
     val paparazzi = Paparazzi(
@@ -24,7 +24,10 @@ class ExampleUnitTest {
     @Test
     fun launchComposable() {
         paparazzi.snapshot {
-            MyComposable()
+            MyComposableInAppModule(
+                text = paparazzi.context.getString(R.string.example_string_in_dynamic_feature_module),
+                drawableId = R.drawable.ic_apple_flat_24
+            )
         }
     }
 

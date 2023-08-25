@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Poc Paparazzi</string>
     <string name="title_dynamicfeature">DynamicFeatureModule</string>
+    <string name="example_string_in_app_module">example_string_in_app_module</string>
 </resources>
