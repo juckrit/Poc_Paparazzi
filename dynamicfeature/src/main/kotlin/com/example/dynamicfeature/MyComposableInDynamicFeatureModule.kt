@@ -4,13 +4,14 @@ import androidx.compose.foundation.Image
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.painterResource
+import com.example.pocpaparazzi.RCoreDrawable
 
 
 @Composable
-fun MyComposable(text:String){
+fun MyComposableInDynamicFeatureModule(text:String){
     Text(text)
     Image(
-        painter = painterResource(R.drawable.ic_apple_flat_24_in_dynamic_feature_module),
+        painter = painterResource(RCoreDrawable.ic_launcher_background_in_app_module),
         contentDescription = null,
     )
 }

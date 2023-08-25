@@ -24,7 +24,7 @@ class ExampleUnitTestInDynamicFeatureModule {
     @Test
     fun launchComposable() {
         paparazzi.snapshot {
-            MyComposable(
+            MyComposableInDynamicFeatureModule(
                 text = paparazzi.context.getString(R.string.example_string_in_dynamic_feature_module),
             )
         }
