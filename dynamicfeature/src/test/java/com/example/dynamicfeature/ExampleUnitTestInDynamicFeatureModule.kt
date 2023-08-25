@@ -24,9 +24,8 @@ class ExampleUnitTestInDynamicFeatureModule {
     @Test
     fun launchComposable() {
         paparazzi.snapshot {
-            MyComposableInAppModule(
+            MyComposable(
                 text = paparazzi.context.getString(R.string.example_string_in_dynamic_feature_module),
-                drawableId = R.drawable.ic_apple_flat_24
             )
         }
     }

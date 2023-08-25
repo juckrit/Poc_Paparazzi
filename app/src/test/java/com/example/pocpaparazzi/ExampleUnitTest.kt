@@ -26,7 +26,6 @@ class ExampleUnitTest {
         paparazzi.snapshot {
             MyComposableInAppModule(
                 text = paparazzi.context.getString(R.string.example_string_in_app_module),
-                drawableId = R.drawable.ic_launcher_background
             )
         }
     }
