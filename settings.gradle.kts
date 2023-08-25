@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Poc Paparazzi"
 include(":app")
- 
+include(":dynamicfeature")
